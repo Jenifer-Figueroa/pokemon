@@ -5,8 +5,9 @@ window.addEventListener('load', function () {
     const ataque = document.querySelector('.ataque');
     const ataqEsp = document.querySelector('.ataqueEsp');
     const defensa = document.querySelector('.defensa');
-    const boton = document.querySelector('.bot');
-    const buscador = document.querySelector('.form-control')
+    const buscador = document.querySelector('.form-control');
+    const boton = document.querySelector('.bus');
+    const boton2 = document.querySelector('.btn')
 
  
 
@@ -50,6 +51,9 @@ const random = getRandomInt(1, 151)
  
 
 buscador.addEventListener('change', function(){
+    fetchData(buscador.value)
+})
+boton2.addEventListener('click',function(){
     fetchData(buscador.value)
 })
 
